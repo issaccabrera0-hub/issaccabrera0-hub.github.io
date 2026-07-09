@@ -37,3 +37,17 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+body,
+input,
+button,
+select,
+textarea,
+.masthead,
+.sidebar,
+.page,
+.page__content,
+.page__title,
+.archive,
+.author__content {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
