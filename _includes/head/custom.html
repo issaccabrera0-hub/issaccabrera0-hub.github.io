@@ -23,6 +23,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+/* Headings */
 h1, h2, h3, h4, h5, h6,
 .page__title,
 .site-title,
@@ -31,6 +32,7 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 500 !important;
 }
 
+/* General text */
 body,
 .page__content,
 p,
@@ -42,33 +44,46 @@ li,
     font-weight: 300 !important;
 }
 
+/* Ensure Markdown bold text appears bold */
+.page__content strong,
+.page__content b {
+    font-weight: 600 !important;
+}
+
+/* Main page title */
 .page__title,
 h1 {
     font-size: 1.4rem !important;
 }
 
+/* Paragraph formatting */
 .page__content p {
     font-size: 0.95rem !important;
-    line-height: 1.2 !important;
+    line-height: 1.5 !important;
     text-align: justify;
     text-justify: inter-word;
 }
 
+/* Sidebar name */
 .author__name {
     font-size: 1.2rem !important;
 }
 
+/* Navigation */
 .greedy-nav a {
     font-size: 1rem !important;
 }
-    @media (min-width: 90em) {
-  .page {
-    padding-left: 180px !important;
-  }
+
+/* Desktop layout adjustments */
+@media (min-width: 80em) {
+    .page__inner-wrap {
+        padding-top: 80px;
+    }
 }
-    @media (min-width: 80em) {
-  .page__inner-wrap {
-    padding-top: 80px;
-  }
+
+@media (min-width: 90em) {
+    .page {
+        padding-left: 180px !important;
+    }
 }
 </style>
